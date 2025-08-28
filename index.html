@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Service Directory</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Service Directory</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-green-50">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-3 bg-white shadow">
+    <div class="flex items-center gap-2">
+      <img src="Images/logo.png" class="w-8 h-8" alt="Logo">
+      <h1 class="text-lg font-bold text-green-700">Emergency Service</h1>
+    </div>
+    <div class="flex items-center gap-6">
+      <div class="flex items-center gap-1">
+        <img src="Images/heart.png" class="w-5 h-5" alt="Heart">
+        <span id="heartCount" class="font-bold text-red-500">0</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <img src="Images/coin.png" class="w-5 h-5" alt="Coin">
+        <span id="coinCount" class="font-bold text-yellow-600">100</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <img src="Images/emergency.png" class="w-5 h-5" alt="Copy">
+        <span id="copyCount" class="font-bold text-green-600">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero bg-gradient-to-r from-green-600 to-green-800 text-white text-center py-8">
+    <img src="Images/logo-dark.png" class="mx-auto w-16 h-16">
+    <h2 class="text-3xl font-bold mt-4">Emergency Service Directory</h2>
+    <p class="mt-2">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+  </section>
+
+  <!-- Main Section -->
+  <main class="grid grid-cols-12 gap-6 p-6">
+
+    <!-- Card Section -->
+    <section class="col-span-12 md:col-span-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- 1. National Emergency -->
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="Images/emergency.png" class="w-6 h-6" alt="Emergency">
+            <h3 class="font-bold">National Emergency Number</h3>
+          </div>
+          <button class="heartBtn"><img src="Images/heart.png" class="w-5 h-5"></button>
+        </div>
+        <p class="text-gray-500 text-sm">999</p>
+        <span class="badge bg-green-100 text-green-700">National Emergency</span>
+        <div class="actions">
+          <button class="copyBtn">Copy</button>
+          <button class="callBtn">Call</button>
+        </div>
+      </div>
+
+      <!-- 2. Police -->
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="Images/police.png" class="w-6 h-6" alt="Police">
+            <h3 class="font-bold">Police Helpline Number</h3>
+          </div>
+          <button class="heartBtn"><img src="Images/heart.png" class="w-5 h-5"></button>
+        </div>
+        <p class="text-gray-500 text-sm">999</p>
+        <span class="badge bg-blue-100 text-blue-700">Police</span>
+        <div class="actions">
+          <button class="copyBtn">Copy</button>
+          <button class="callBtn">Call</button>
+        </div>
+      </div>
+
+      <!-- 3. Fire Service -->
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="Images/fire-service.png" class="w-6 h-6" alt="Fire">
+            <h3 class="font-bold">Fire Service Number</h3>
+          </div>
+          <button class="heartBtn"><img src="Images/heart.png" class="w-5 h-5"></button>
+        </div>
+        <p class="text-gray-500 text-sm">999</p>
+        <span class="badge bg-red-100 text-red-700">Fire Service</span>
+        <div class="actions">
+          <button class="copyBtn">Copy</button>
+          <button class="callBtn">Call</button>
+        </div>
+      </div>
+
+      <!-- 4. Ambulance -->
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="Images/ambulance.png" class="w-6 h-6" alt="Ambulance">
+            <h3 class="font-bold">Ambulance Service</h3>
+          </div>
+          <button class="heartBtn"><img src="Images/heart.png" class="w-5 h-5"></button>
+        </div>
+        <p class="text-gray-500 text-sm">16263</p>
+        <span class="badge bg-yellow-100 text-yellow-700">Ambulance</span>
+        <div class="actions">
+          <button class="copyBtn">Copy</button>
+          <button class="callBtn">Call</button>
+        </div>
+      </div>
+
+      <!-- 5. Women & Child -->
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="Images/emergency.png" class="w-6 h-6" alt="Women">
+            <h3 class="font-bold">Women & Child Helpline</h3>
+          </div>
+          <button class="heartBtn"><img src="Images/heart.png" class="w-5 h-5"></button>
+        </div>
+        <p class="text-gray-500 text-sm">109</p>
+        <span class="badge bg-pink-100 text-pink-700">Women & Child Helpline</span>
+        <div class="actions">
+          <button class="copyBtn">Copy</button>
+          <button class="callBtn">Call</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="Images/emergency.png" class="w-6 h-6" alt="Anti-Corruption">
+            <h3 class="font-bold">Anti-Corruption</h3>
+          </div>
+          <button class="heartBtn"><img src="Images/heart.png" class="w-5 h-5"></button>
+        </div>
+        <p class="text-gray-500 text-sm">106</p>
+        <span class="badge bg-purple-100 text-purple-700">Govt</span>
+        <div class="actions">
+          <button class="copyBtn">Copy</button>
+          <button class="callBtn">Call</button>
+        </div>
+      </div>
+
+      <!-- 7. Electricity -->
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="Images/emergency.png" class="w-6 h-6" alt="Electricity">
+            <h3 class="font-bold">Electricity Helpline</h3>
+          </div>
+          <button class="heartBtn"><img src="Images/heart.png" class="w-5 h-5"></button>
+        </div>
+        <p class="text-gray-500 text-sm">16120</p>
+        <span class="badge bg-orange-100 text-orange-700">Electricity Outage</span>
+        <div class="actions">
+          <button class="copyBtn">Copy</button>
+          <button class="callBtn">Call</button>
+        </div>
+      </div>
+  <!-- 8. Child Helpline -->
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="Images/emergency.png" class="w-6 h-6" alt="Child">
+            <h3 class="font-bold">Brac Helpline</h3>
+          </div>
+          <button class="heartBtn"><img src="Images/heart.png" class="w-5 h-5"></button>
+        </div>
+        <p class="text-gray-500 text-sm">1098</p>
+        <span class="badge bg-indigo-100 text-indigo-700">Brac</span>
+        <div class="actions">
+          <button class="copyBtn">Copy</button>
+          <button class="callBtn">Call</button>
+        </div>
+      </div>
+      <!-- 9. Railway -->
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="Images/Bangladesh-Railway.png" class="w-6 h-6" alt="Railway">
+            <h3 class="font-bold">Bangladesh Railway Helpline</h3>
+          </div>
+          <button class="heartBtn"><img src="Images/heart.png" class="w-5 h-5"></button>
+        </div>
+        <p class="text-gray-500 text-sm">131</p>
+        <span class="badge bg-teal-100 text-teal-700">Bangladesh Railway</span>
+        <div class="actions">
+          <button class="copyBtn">Copy</button>
+          <button class="callBtn">Call</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- History Section -->
+    <aside class="col-span-12 md:col-span-3 bg-white p-4 rounded-2xl shadow">
+      <div class="flex justify-between items-center mb-3">
+        <h3 class="font-bold">📞 Call History</h3>
+        <button id="clearHistory" class="text-sm text-red-500">Clear</button>
+      </div>
+      <ul id="historyList" class="text-sm space-y-2"></ul>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

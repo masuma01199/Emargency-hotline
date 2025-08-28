@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero img {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+}
+
+/* Card styling */
+.card {
+  @apply bg-white p-4 rounded-2xl shadow flex flex-col justify-between;
+}
+
+.badge {
+  @apply text-xs px-2 py-1 rounded mt-2;
+}
+
+.actions {
+  @apply flex justify-between mt-4;
+}
+
+.actions button {
+  @apply px-3 py-1 rounded;
+}
+
+.copyBtn {
+  @apply bg-gray-200;
+}
+
+.callBtn {
+  @apply bg-green-600 text-white;
+}
