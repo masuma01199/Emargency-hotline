@@ -8,7 +8,6 @@ body {
   padding: 5px;
 }
 
-/* Card styling */
 .card {
   @apply bg-white p-4 rounded-2xl shadow flex flex-col justify-between;
 }
@@ -21,14 +20,10 @@ body {
   @apply flex justify-between mt-4;
 }
 
-.actions button {
-  @apply px-3 py-1 rounded;
-}
-
 .copyBtn {
-  @apply bg-gray-200;
+  @apply bg-gray-200 px-3 py-1 rounded;
 }
 
 .callBtn {
-  @apply bg-green-600 text-white;
+  @apply bg-green-600 text-white px-3 py-1 rounded;
 }
