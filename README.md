@@ -15,25 +15,22 @@ The key differences between getElementById, getElementsByClassName, and querySel
 -querySelectorAll:Returns a static NodeList. This means the collection is a snapshot of the DOM at the time of retrieval and will not automatically update if the DOM changes later.
 
 ---
-
-
 # 2. How do you create and insert a new element into the DOM?
 Creating and inserting a new element into the Document Object Model (DOM) typically involves two main steps: creating the element and then appending or inserting it into an existing part of the document.
+
 -1. Creating the Element:
 Use `document.createElement()`
-
 -2. Inserting the Element into the DOM:
 const newDiv = document.createElement("div");
 newDiv.textContent = "Hello World";
 document.body.appendChild(newDiv);
 
 # 3.What is Event Bubbling and how does it work?
-
 Event bubbling in JavaScript is a mechanism where an event triggered on a child element propagates upward through its ancestors in the DOM. It allows parent elements to respond to events triggered by their child elements.
-
 -Propagation Direction: In event bubbling, the event starts at the target element and propagates upward through its -parent elements to the root of the DOM.
 -Default Behavior: Event bubbling is enabled by default in JavaScript.
 -Event Listeners: If multiple event listeners are attached in the bubbling phase, they are executed in sequence, starting from the innermost target element.
+
 ---
 ### The way Event Bubbling works:
 -Event Triggering: The click event is triggered on the child element (button), initiating the event propagation.
